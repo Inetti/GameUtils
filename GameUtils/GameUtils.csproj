@@ -43,6 +43,11 @@
     <Compile Include="GRandom.cs" />
     <Compile Include="Items\IItem.cs" />
     <Compile Include="Items\ItemsStorage.cs" />
+    <Compile Include="LogSystem\ILog.cs" />
+    <Compile Include="LogSystem\ILogger.cs" />
+    <Compile Include="LogSystem\ILogManager.cs" />
+    <Compile Include="LogSystem\Log.cs" />
+    <Compile Include="LogSystem\Logger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
