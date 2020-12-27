@@ -11,10 +11,11 @@ namespace GameUtils.LogSystem {
             logList = new List<ILog>();
         }
         
-        public void Add(ILog log) {
+        public void Add(string logMessage) {
+            ILog log = new Log(logList.Count, logMessage);
             logList.Add(log);
             if (OnViewMessage != null) {
-                OnViewMessage(log.Message);
+                OnViewMessage(string.Format("{0}: {1}", log.ID, log.Message));
             }
         }
     }
